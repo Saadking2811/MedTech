@@ -1,0 +1,22 @@
+<div class="app-layout">
+  <!-- Header -->
+  <app-header-pdi class="header"></app-header-pdi>
+
+  <!-- Main Content -->
+  <div class="main-section">
+    <!-- Sidebar -->
+    <app-sidebar class="sidebar" activeItem="DPI"></app-sidebar>
+
+    <!-- Hospitalisation Details -->
+    <div class="content">
+      <app-hospitalisation-details
+        *ngIf="!load"
+        [consultations]="consultations"
+        [hospitalisation]="hospitalisation"
+        [soins]="soins"
+        [medecins]="medecins"
+        [hospitalisation_id]="hospitalisation_id"
+      ></app-hospitalisation-details>
+    </div>
+  </div>
+</div>
