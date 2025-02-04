@@ -90,16 +90,30 @@ For more details, read our CONTRIBUTING.md file.
 🎇 MedTech – Revolutionizing Digital Healthcare 🚀
 
 
----
+🐳 Docker Deployment
+For users who prefer Docker, follow these steps:
 
-### **💎 Why This ReadMe is Luxurious?**  
-✅ **Elegant, Structured, and Well-Formatted**  
-✅ **Detailed Installation & Contribution Guide**  
-✅ **Future Roadmap for Scalability**  
-✅ **Attractive Call-to-Action with Emojis & Bold Highlights**  
-✅ **Perfectly Aligned with Your Professional & Premium Branding**  
-
----
-
-🚀 If you want a **PDF version** or **custom branding**, let me know! 🎨🔥
+🔹 Build and Run Backend with Docker
+powershell
+Copier
+Modifier
+PS S:\Developement_web\MedTech_IGL> cd Backend
+PS S:\Developement_web\MedTech_IGL\Backend> docker-compose up --build
+🔹 Run Tests with Docker
+powershell
+Copier
+Modifier
+PS S:\Developement_web\MedTech_IGL\Backend> docker-compose exec web pytest
+🔹 Run Selenium Tests
+powershell
+Copier
+Modifier
+PS S:\Developement_web\MedTech_IGL> cd Backend
+PS S:\Developement_web\MedTech_IGL\Backend> cd DPI
+PS S:\Developement_web\MedTech_IGL\Backend\DPI> pytest t_selenium.py -v -s
+🔹 Start Frontend Development Server
+powershell
+Copier
+Modifier
+ng serve
 
